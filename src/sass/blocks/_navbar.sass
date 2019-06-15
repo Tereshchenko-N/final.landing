@@ -1,17 +1,79 @@
+.navbar-section
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-left: auto
 .navbar
   display: flex
+  justify-content: flex-end
+  align-items: center
+  flex-basis: 45%
+  line-height: 40px
   &-logo
     min-width: 50px
     min-height: 67px
+    margin-right: 95px
+    margin-top: 8px
   &-menu
+    margin-top: -10px
+    color: #000
+    font-weight: 400
+    margin-right: -50px
+    letter-spacing: 0.1
     &-list
       display: flex
       list-style-type: none
-    
   &-contacts
+    justify-content: flex-start
+    flex-basis: 40%
     display: flex
+    padding-left: 50px
+    background-color: $secondary
+    margin-top: 0
+    padding-top: 37px
+    padding-bottom: 25px
+    align-items: center
+    margin-top: -25px
+    &__phone
+      &-image
+        margin-bottom: -3px
+      &-number
+        text-decoration: none
+        color: $text-color
+        font-size: 18px
+        letter-spacing: 0.5px
     &__button
       min-width: 138px
       min-height: 30px
       max-height: 30px
-      
+      font-size: 14px
+      text-align: center
+      font-weight: 600
+      margin-left: 43px
+      margin-top: 8px
+.menu
+  &-list
+    &__item
+      padding-right: 20px
+      &:after
+        content: ''
+        display: inline-block
+        height: 12px
+        width: 1px
+        background-color: $text-color
+        opacity: 0.15
+        margin-left: 31px
+        margin-right: 8px
+      &:last-child
+        margin-left: -6px
+        &:after
+          content: ''
+          display: none
+      &-link
+        text-decoration: none
+        color: $text-color
+        font-size: 16px
+        font-weight: 400
+
+
+ 
