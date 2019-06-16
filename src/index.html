@@ -10,7 +10,6 @@
 <body>
   <main>
     <section class="section navbar-section">
-      <div class="container">
         <div class="navbar">
           <div class="navbar-logo"><img src="img/navbar/logo.png" alt="Логотип" class="logo"></div>
           <div class="navbar-menu">
@@ -32,7 +31,6 @@
           <!-- /.navbar__menu -->
         </div>
         <!-- /.navbar -->
-      </div>
       <div class="navbar-contacts">
         <div class="navbar-contacts__phone">
           <img src="img/navbar/phone.png" alt="Значек телефона" class="navbar-contacts__phone-image">
@@ -44,7 +42,8 @@
       <!-- /.container -->
     </section>
     <!-- /.section navbar-section -->
-    <div class="slider">
+    <div class="hero">
+      <div class="slider">
         <div class="slider__contents">
           <img class="slider__image" src="img/slider/2.png" alt="">
         </div>
@@ -55,16 +54,24 @@
           <img class="slider__image" src="img/slider/2.png" alt="">
         </div>
         <div class="slider__contents">
-          <img class="slider__image"  src="img/slider/2.png" alt="">
+          <img class="slider__image" src="img/slider/2.png" alt="">
         </div>
       </div>
-    
+      <div class="hero-text">
+        <h1 class="hero__title">Наша бригада по монтированию отопления и сантехники</h1>
+        <h2 class="hero__subtitle">вызов по Москве и Московской области</h2>
+        <p class="hero__description">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки.Всё что
+          Вам нужно это оставить <br> заявку либо позвонить самому на указанный номер.Всего хорошего.</p>
+        <button class="button hero__button">подробнее</button>
+      </div>
+    </div>
+    <!-- /.hero -->
   </main>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script>
 
-    
+  //Скрипт слайдера 
     $(document).ready(function () {
         $('.slider').slick({
           infinite: true,

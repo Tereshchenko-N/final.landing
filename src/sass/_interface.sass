@@ -11,10 +11,15 @@ body
   margin: auto
 .text-bold
   +bold
+  padding-left: 5px
+
 .button
   background-color: $main-color
   color: $text-color
   border: none
   outline: none
   cursor: pointer
-  
+  &:hover
+    background-color: lighten($main-color, 15%)
+  &:focus
+    outline: none

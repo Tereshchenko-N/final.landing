@@ -40,6 +40,7 @@ body {
 
 .text-bold {
   font-family: 'Proxima Nova Bold', sans-serif;
+  padding-left: 5px;
 }
 
 .button {
@@ -48,6 +49,14 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ffd94d;
+}
+
+.button:focus {
+  outline: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -404,36 +413,38 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin-left: auto;
+  margin-top: -5px;
 }
 
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 57%;
+      flex-basis: 57%;
   line-height: 40px;
 }
 
 .navbar-logo {
   min-width: 50px;
   min-height: 67px;
+  margin-left: auto;
   margin-right: 95px;
   margin-top: 8px;
 }
 
 .navbar-menu {
-  margin-top: -10px;
   color: #000;
   font-weight: 400;
-  margin-right: -50px;
   letter-spacing: 0.1;
+  margin-right: -20px;
+  margin-top: -12px;
 }
 
 .navbar-menu-list {
@@ -447,20 +458,23 @@ template {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  -ms-flex-preferred-size: 42%;
+      flex-basis: 42%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: 50px;
   background-color: #f7f7f7;
-  margin-top: 0;
-  padding-top: 37px;
+  padding-top: 25px;
   padding-bottom: 35px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -25px;
+}
+
+.navbar-contacts__phone {
+  margin-left: 3px;
+  margin-right: -6px;
 }
 
 .navbar-contacts__phone-image {
@@ -472,6 +486,7 @@ template {
   color: #020202;
   font-size: 18px;
   letter-spacing: 0.5px;
+  margin-right: 7px;
 }
 
 .navbar-contacts__button {
@@ -482,7 +497,7 @@ template {
   text-align: center;
   font-weight: 600;
   margin-left: 43px;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .menu-list__item {
@@ -536,6 +551,12 @@ template {
   width: 100%;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media (max-width: 1920px) {
+  .navbar-contacts {
+    margin-left: 65px;
+  }
 }
 
 /* .menu
@@ -596,12 +617,12 @@ template {
 .slider__image {
   position: relative;
   width: 100%;
-  height: 740px;
+  max-height: 740px;
 }
 
 .slider__dots {
   position: absolute;
-  top: 89%;
+  top: 88%;
   right: 47%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -747,5 +768,54 @@ ul {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.hero {
+  position: relative;
+  margin-top: -7px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 23%;
+  left: 19.5%;
+}
+
+.hero__title {
+  color: #ffc800;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 35px;
+  line-height: 55px;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+}
+
+.hero__subtitle {
+  color: #fffffe;
+  font-family: 'Proxima Nova Rg', sans-serif;
+  font-size: 35px;
+  line-height: 55px;
+  font-weight: 400;
+  margin-top: -28px;
+  margin-bottom: 16px;
+}
+
+.hero__description {
+  opacity: 0.42;
+  color: #fffffe;
+  font-family: 'Proxima Nova Rg', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 53px;
+}
+
+.hero__button {
+  width: 185px;
+  height: 44px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  line-height: 40px;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */
