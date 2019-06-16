@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="main">
+  <main>
     <section class="section navbar-section">
       <div class="container">
         <div class="navbar">
           <div class="navbar-logo"><img src="img/navbar/logo.png" alt="Логотип" class="logo"></div>
           <div class="navbar-menu">
             <ol class="navbar-menu-list">
+              <a class="menu__button"><span class="menu__button-item"></span></a>
               <li class="menu-list__item"><a class="menu-list__item-link" href="#">Услуги</a></li>
               <!-- /.menu-list__item -->
               <li class="menu-list__item"><a class="menu-list__item-link" href="#">Цены</a></li>
@@ -43,6 +44,37 @@
       <!-- /.container -->
     </section>
     <!-- /.section navbar-section -->
-  </div>
+    <div class="slider">
+        <div class="slider__contents">
+          <img class="slider__image" src="img/slider/2.png" alt="">
+        </div>
+        <div class="slider__contents">
+          <img class="slider__image" src="img/slider/2.png" alt="">
+        </div>
+        <div class="slider__contents">
+          <img class="slider__image" src="img/slider/2.png" alt="">
+        </div>
+        <div class="slider__contents">
+          <img class="slider__image"  src="img/slider/2.png" alt="">
+        </div>
+      </div>
+    
+  </main>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+
+    
+    $(document).ready(function () {
+        $('.slider').slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
+          dotsClass: 'slick-dots slider__dots',
+  });
+});
+  </script>
 </body>
 </html>
