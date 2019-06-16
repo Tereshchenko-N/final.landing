@@ -7,6 +7,8 @@ body
 
 .container
   margin-bottom: 130px
+  width: 1170px
+  margin: auto
   
   margin: auto
 .text-bold
@@ -23,3 +25,20 @@ body
     background-color: lighten($main-color, 15%)
   &:focus
     outline: none
+.main
+  &-header
+    height: 58px
+    width: 244px
+    background-color: $main-color
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    margin-top: -30px
+    margin-left: -35px
+    &__title
+      font-size: 28px
+      +bold
+      margin: auto
+      text-transform: uppercase
+      

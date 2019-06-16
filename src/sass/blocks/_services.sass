@@ -1,0 +1,86 @@
+.section
+  &__services
+    background-color: $secondary
+.services
+  position: relative
+  margin-top: 133px
+  &-block
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    padding-top: 104px
+    padding-bottom: 117px
+    background-color: $secondary
+    &__item
+      margin-bottom: 20px
+    &__image
+      position: relative
+      filter: brightness(40%)
+    &__content
+      position: absolute
+      margin-top: -205px
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-wrap: wrap
+      max-width: 377px
+      max-height: 106px
+      width: 377px
+      height: 106px
+      padding-left: 60px
+      padding-right: 60px
+      text-align: center
+    &__text
+      display: block
+      font-size: 20px
+      line-height: 26px
+      color: $light-text
+    &__text-hover
+      display: none
+      font-size: 20px
+      line-height: 26px
+      color: #000
+    &__button
+      display: block
+      height: 33px
+      width: 138px
+      text-transform: uppercase
+      margin-top: 5px
+    &__button-hover
+      display: none
+      background-color: #000
+      color: $light-text
+      height: 33px
+      width: 138px
+      text-transform: uppercase
+      margin-top: 5px
+.services
+  &-block
+    &__item
+      &:hover
+        .services
+          &-block
+            &__image
+              filter: opacity(30%)
+              
+.services
+  &-block
+    &__item
+      &:hover
+        .services
+          &-block
+            &__button
+              display: none
+              &-hover
+                display: block
+            &__text
+              display: none
+              &-hover
+                display: block
+.services
+  &-block
+    &__button
+      &-hover
+        &:hover
+          background-color: lighten(#000, 25%)
