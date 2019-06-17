@@ -17,6 +17,8 @@
     &__image
       position: relative
       filter: brightness(40%)
+      max-width: 377px
+      max-height: 236px
     &__content
       position: absolute
       margin-top: -205px
@@ -26,8 +28,6 @@
       flex-wrap: wrap
       max-width: 377px
       max-height: 106px
-      width: 377px
-      height: 106px
       padding-left: 60px
       padding-right: 60px
       text-align: center
@@ -84,3 +84,8 @@
       &-hover
         &:hover
           background-color: lighten(#000, 25%)
+@media (max-width: 1200px)
+  .services
+    &-block
+      max-width: 960px
+      margin-left: 100px
