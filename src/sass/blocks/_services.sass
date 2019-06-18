@@ -89,3 +89,39 @@
     &-block
       max-width: 960px
       margin-left: 100px
+@media (max-width: 1200px)
+  .services
+    &-block
+      margin-left: 0
+      justify-content: space-around
+@media (max-width: 960px)
+  .services
+    &-block
+      &__content
+        margin-top: -165px
+        padding-left: 30px
+        padding-right: 30px
+        max-width: 300px
+      &__image
+        max-width: 300px
+        max-height: 200px
+@media (max-width: 960px)
+  .services
+    &-block
+      &__content
+        &:last-child
+          margin-top: -185px
+        &:ntn-child(3n)
+          margin-top: -185px
+
+
+@media (max-width: 576px)
+  .services
+    &-block
+      &__content
+        &:last-child
+          margin-top: -185px
+        &:ntn-child(3n)
+          margin-top: -185px
+      
+      

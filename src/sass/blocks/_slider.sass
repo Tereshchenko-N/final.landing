@@ -3,6 +3,7 @@
     position: relative
     width: 100%
     max-height: 740px
+    
   &__dots
     position: absolute
     top: 88%
@@ -41,4 +42,25 @@ ul
   &:nth-child(3n) 
     button
       background-color: $main-color 
+@media (max-width: 1050px)
+  .slider
+    &__dots
+      top: 80%
+@media (max-width: 850px)
+  .slider
+    &__dots
+      top: 75%
+      width: 100px
+      li
+        button
+          height: 10px
+          width: 10px
+
+@media (max-width: 450px)
+  .slider
+    &__dots
+      top: 65%
+      width: 100px
+      
+
   

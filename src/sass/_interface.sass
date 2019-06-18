@@ -15,12 +15,18 @@ body
     margin: auto
 @media (max-width: 960px)
   .container
-    width: 960px
+    width: 768px
     margin: auto
 @media (max-width: 768px)
   .container
     width: 576px
     margin: auto
+@media (max-width: 576px)
+  .container
+    width: 320px
+    margin: auto
+
+
   
   margin: auto
 .text-bold
@@ -48,9 +54,38 @@ body
     position: absolute
     margin-top: -30px
     margin-left: -35px
+    z-index: 6
     &__title
       font-size: 28px
       +bold
       margin: auto
       text-transform: uppercase
+@media (max-width: 1100px)
+  .main
+    &-header
+      margin-left: 5%
+  
+@media (max-width: 576px)
+  .main
+    &-header
+      margin-left: 35px
+      height: 48px
+      width: 220px
+@media (max-width: 450px)
+  .main
+    &-header
+      height: 38px
+      width: 200px
+      margin-top: -22px
+      margin-left: 55px
+      &__title
+        font-size: 22px
+@media (max-width: 1270px)
+  .main
+    &-header
+      margin-left: 6%
+
+    
+  
       
+

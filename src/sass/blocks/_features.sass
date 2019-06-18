@@ -2,9 +2,19 @@
   padding-top: 143px
   display: flex
   margin-bottom: 142px
+  flex-wrap: wrap
+  &:after
+    content: ''
+    background-image: url('../img/features/light-bg.png') 
+    width: 57%
+    height: 75%
+    max-height: 563px
+    position: absolute
   &-container
     display: flex
     flex-wrap: wrap
+    z-index: 4
+   
   &-block
     padding-top: 54px
     display: flex
@@ -12,14 +22,23 @@
     justify-content: space-between
     flex-wrap: wrap
     flex-basis: 60%
+    z-index: 3
+    margin-top: 30px
+    margin-bottom: 13px
+    
     &__image
      display: block
-     margin-top: -10px
      margin-bottom: 15px 
+     z-index: 2
+     margin-top: -10px
+     margin-bottom: 10px
     &__text
       font-size: 18px
       text-transform: uppercase
       text-align: center
+      z-index: 1
+      margin-top: 5px
+      margin-bottom: 20px
     &__item
       display: flex
       align-items: center
@@ -28,23 +47,25 @@
       max-height: 168px
       max-width: 198px
       background-color: #fff
-      min-height: 168px
-      min-width: 198px
-      margin-top: 36px
+      width: 198px
+      height: 168px
+      margin-top: 0px
       margin-right: 36px
+      z-index: 0
+      margin-bottom: 10px
   &-list
-    margin-top: 63px
-    flex-direction: 40%
+    margin-top: 60px
+    flex-basis: 40%
+    padding-left: 10px
+    
     &__block
       list-style-type: none
     &__text
       display: flex
-      padding-left: 67px
+      padding-left: 60px
       position: relative
       font-size: 20px
       line-height: 25px
-      
-
       &:before
         content: ''
         position: absolute
@@ -52,22 +73,120 @@
         height: 2px
         background-color: $text-color
         left: 10px
-        bottom: 33px
+        bottom: 35px
+       
     &__item
       display: flex
       justify-content: 
       align-items: center
+      margin-bottom: 25px
+      &:last-child
+        margin-top: 50px
     &__counter
       max-width: 22px
       max-height: 24px
-      
-     
-      
-   
-.first
-  margin-left: 5px
-.second, .third
-  margin-top: -5px
+      margin-top: -15px
 
-  
-   
+.counter
+  &__first
+    margin-right: 11px
+    margin-top: -20px
+  &__second
+    margin-right: 6px
+    margin-top: -20px
+  &__third
+    margin-top: -6px
+  &__fourth
+    margin-top: 0px
+.text
+  &__third
+    &:before
+      bottom: 15px
+      left: 15px
+  &__fourth
+    &:before
+      bottom: 10px
+      left: 13px
+
+
+.diagram, .experience, 
+  margin-top: -20px
+.calendar
+  margin-top: -5px
+  &-img
+    margin-top: -35px
+    margin-bottom: 20px
+@media (max-width:1400px)
+  .features
+    &:after
+      width: 61%
+      min-height: 500px
+@media (max-width:1200px)
+  .features
+    &:after
+      width: 100%
+      min-height: 800px
+
+    &-list
+     flex-basis: 50%
+     
+    &-block
+      flex-basis: 50%
+      &__item
+        margin-bottom: 50px
+  .diagram, .experience, 
+    margin-top: -20px
+    margin-bottom: 34px
+  .calendar
+    margin-top: 20px
+    &-img
+      margin-top: -30px
+@media (max-width: 960px)
+  .features
+    &-block
+      flex-basis: 100%
+    &-list
+      flex-basis: 100%
+      &__block
+        justify-content: center
+        align-items: center
+    &:after
+      width: 100%
+      min-height: 550px
+      
+@media (max-width: 768px)
+  .features
+    &-block
+      flex-basis: 100%
+      padding-left: 50px
+    &-list
+      flex-basis: 100%
+    &:after
+      width: 100%
+      min-height: 650px
+@media (max-width: 576px)
+  .features
+    &-block
+      background-color: $secondary
+      &__item
+        margin: 0 
+        margin-bottom: 30px
+    &:after
+      width: 100%
+      min-height: 1350px
+    &-list
+      &__block
+        padding-left: 0px
+@media (max-width: 576px)    
+  .features
+    &-list
+      &__text
+        &:before
+          bottom: 44px
+  .text
+    &__third,
+    &__fourth
+      &:before
+        bottom: 22px
+        
+     

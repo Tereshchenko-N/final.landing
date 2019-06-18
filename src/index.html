@@ -10,35 +10,40 @@
 <body>
   <main>
     <section class="section navbar-section">
-        <div class="navbar">
-          <div class="navbar-logo"><img src="img/navbar/logo.png" alt="Логотип" class="logo"></div>
-          <div class="navbar-menu">
-            <ol class="navbar-menu-list">
+        <div class="container navbar-container">
+          <div class="navbar">
+            <div class="navbar-logo"><img src="img/navbar/logo.png" alt="Логотип" class="logo"></div>
+            <div class="navbar-menu">
+              <div class="navbar-menu-list">
+          
+                <a class="menu-list__item" href="#">Услуги</a>
+                <!-- /.menu-list__item -->
+                <a class="menu-list__item" href="#">Цены</a>
+                <!-- /.menu-list__item -->
+                <a class="menu-list__item" href="#">Отзывы</a>
+                <!-- /.menu-list__item -->
+                <a class="menu-list__item" href="#">Новости</a>
+                <!-- /.menu-list__item -->
+                <a class="menu-list__item" href="#">Контакты</a>
+                <!-- /.menu-list__item -->
+          
+              </div>
+              <!-- /.menu-list -->
               <a class="menu__button"><span class="menu__button-item"></span></a>
-              <li class="menu-list__item"><a class="menu-list__item-link" href="#">Услуги</a></li>
-              <!-- /.menu-list__item -->
-              <li class="menu-list__item"><a class="menu-list__item-link" href="#">Цены</a></li>
-              <!-- /.menu-list__item -->
-              <li class="menu-list__item"><a class="menu-list__item-link" href="#">Отзывы</a></li>
-              <!-- /.menu-list__item -->
-              <li class="menu-list__item"><a class="menu-list__item-link" href="#">Новости</a></li>
-              <!-- /.menu-list__item -->
-              <li class="menu-list__item"><a class="menu-list__item-link" href="#">Контакты</a></li>
-              <!-- /.menu-list__item -->
-            </ol>
-            <!-- /.menu-list -->
+            </div>
+            <!-- /.navbar__menu -->
+             <div class="navbar-contacts">
+            <div class="navbar-contacts__phone">
+              <img src="img/navbar/phone.png" alt="Значек телефона" class="navbar-contacts__phone-image">
+              <a href="#" class="navbar-contacts__phone-number">+7 (863)<span class="text-bold">342-22-21</span></a>
+            </div>
+            <button class="button navbar-contacts__button">Заказать звонок</button>
+            <!-- /.button navbar-contacts__button -->
+           </div>
           </div>
-          <!-- /.navbar__menu -->
+          <!-- /.navbar -->
+          
         </div>
-        <!-- /.navbar -->
-      <div class="navbar-contacts">
-        <div class="navbar-contacts__phone">
-          <img src="img/navbar/phone.png" alt="Значек телефона" class="navbar-contacts__phone-image">
-          <a href="#" class="navbar-contacts__phone-number">+7 (863)<span class="text-bold">342-22-21</span></a>
-        </div>
-        <button class="button navbar-contacts__button">Заказать звонок</button>
-        <!-- /.button navbar-contacts__button -->
-      </div>
       <!-- /.container -->
     </section>
     <!-- /.section navbar-section -->
@@ -57,15 +62,13 @@
           <img class="slider__image" src="img/slider/2.jpg" alt="">
         </div>
       </div>
-      <div class="container" style="height: 100%">
-        <div class="hero-text">
-          <h1 class="hero__title">Наша бригада по монтированию отопления и сантехники</h1>
-          <h2 class="hero__subtitle">вызов по Москве и Московской области</h2>
-          <p class="hero__description">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки.Всё что
-            Вам нужно это оставить <br> заявку либо позвонить самому на указанный номер.Всего хорошего.</p>
-          <button class="button hero__button">подробнее</button>
-        </div>
-      </div>
+          <div class="hero-text">
+            <h1 class="hero__title">Наша бригада по монтированию отопления и сантехники</h1>
+            <h2 class="hero__subtitle">вызов по Москве и Московской области</h2>
+            <p class="hero__description">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки.Всё что
+              Вам нужно это оставить <br> заявку либо позвонить самому на указанный номер.Всего хорошего.</p>
+            <button class="button hero__button">подробнее</button>
+          </div>
     </div>
     <!-- /.hero -->
     <div class="section section__services">
@@ -174,20 +177,20 @@
           <!-- /.features-main main-header -->
           <div class="features-block">
             <div class="features-block__item">
-              <img src="img/features/warranty.png" alt="Гарантия" class="features-block__image">
+              <img src="img/features/warranty.png" alt="Гарантия" class="features-block__image waranty100">
               <p class="features-block__text">100 % гарантия качества</p>
               <!-- /.feature-block__text -->
             </div>
             <!-- /.features-block__item -->
-            <div class="features-block__item">
+            <div class="features-block__item diagram">
               <img src="img/features/diagram.png" alt="Диаграмма" class="features-block__image">
-              <p class="features-block__text second">с нами выгодно</p>
+              <p class="features-block__text">с нами выгодно</p>
               <!-- /.feature-block__text -->
             </div>
             <!-- /.features-block__item -->
-            <div class="features-block__item">
+            <div class="features-block__item experience">
               <img src="img/features/trophy.png" alt="Трофей" class="features-block__image">
-              <p class="features-block__text third">большой опыт</p>
+              <p class="features-block__text">большой опыт</p>
               <!-- /.feature-block__text -->
             </div>
             <!-- /.features-block__item -->
@@ -199,13 +202,13 @@
             <!-- /.features-block__item -->
             <div class="features-block__item">
               <img src="img/features/care.png" alt="забота" class="features-block__image">
-              <p class="features-block__text">с заботой о клиенте</p>
+              <p class="features-block__text">с заботой <br> о клиенте</p>
               <!-- /.feature-block__text -->
             </div>
             <!-- /.features-block__item -->
             <div class="features-block__item">
-              <img src="img/features/calendar.png" alt="календарь" class="features-block__image">
-              <p class="features-block__text">точно в срок</p>
+              <img src="img/features/calendar.png" alt="календарь" class="features-block__image calendar-img">
+              <p class="features-block__text calendar">точно в срок</p>
               <!-- /.feature-block__text -->
             </div>
             <!-- /.features-block__item -->
@@ -214,26 +217,26 @@
           <div class="features-list">
             <ol class="features-list__block">
               <li class="features-list__item">
-                <img src="img/features/1.png" alt="1" class="features-list__counter first">
-                <p class="features-list__text">Вызов бригады на следующий день <br> после звонка</p>
+                <img src="img/features/1.png" alt="1" class="features-list__counter counter__first">
+                <p class="features-list__text text__first">Вызов бригады на следующий день <br> после звонка</p>
                 <!-- /.features-list__text -->
               </li>
               <!-- /.features-list__item -->
               <li class="features-list__item">
-                <img src="img/features/2.png" alt="2" class="features-list__counter">
-                <p class="features-list__text">Вся бригада имеет специальное <br> образование</p>
+                <img src="img/features/2.png" alt="2" class="features-list__counter  counter__second">
+                <p class="features-list__text text__second">Вся бригада имеет специальное <br> образование</p>
                 <!-- /.features-list__text -->
               </li>
               <!-- /.features-list__item -->
               <li class="features-list__item">
-                <img src="img/features/3.png" alt="3" class="features-list__counter">
-                <p class="features-list__text">Длительный срок на рынке</p>
+                <img src="img/features/3.png" alt="3" class="features-list__counter counter__third">
+                <p class="features-list__text text__third">Длительный срок на рынке</p>
                 <!-- /.features-list__text -->
               </li>
               <!-- /.features-list__item -->
               <li class="features-list__item">
-                <img src="img/features/4.png" alt="4" class="features-list__counter">
-                <p class="features-list__text">Опыт,качество и скорость</p>
+                <img src="img/features/4.png" alt="4" class="features-list__counter  counter__fourth">
+                <p class="features-list__text text__fourth">Опыт,качество и скорость</p>
                 <!-- /.features-list__text -->
               </li>
               <!-- /.features-list__item -->
@@ -251,6 +254,7 @@
   </main>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/menu.js"></script>
   <script>
 
   //Скрипт слайдера 
