@@ -1,0 +1,113 @@
+.review
+  &-section
+    background-color: black
+    margin-top: 190px
+    padding-bottom: 150px
+  &__dots
+    position: absolute
+    top: 113%
+    right: 47%
+    display: flex
+    justify-content: space-between
+    width: 120px
+    background: none
+    li
+      button
+        border: none
+        width: 20px
+        height: 20px
+        background-color: #fff
+        font-size: 0
+        cursor: pointer
+ 
+  &__slider
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+  &__slide
+    display: flex
+    padding: 115px 5px 5px 5px
+    margin: 0 120px 0 0px
+
+  &__image
+    max-width: 120px
+    max-height: 120px
+    display: inline-block
+    margin: auto
+    margin-top: -10px
+  &__title
+    color: $main-color
+    +bold
+    font-size: 20px
+    line-height: 28px
+    text-align: center
+    margin-top: 20px
+    margin-bottom: 15px
+  &__description
+    color: $light-text
+    font-size: 20px
+    line-height: 28px
+    text-align: center
+    max-width: 465px
+    margin: auto
+    margin-bottom: 10px
+
+.sum
+  color: $light-text 
+  margin-right: 30px
+  margin-left: 5px
+.mark
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-right: -25px
+ 
+.like, .dislike
+  max-width: 20px
+  max-height: 20px
+.second
+  &__slide
+    margin: 0 0 0 120px
+    
+ul
+  list-style-type: none
+
+// Настройка dots при активном состоянии 
+.review__slider-active
+  button
+    &:focus
+      border: none
+      background-color: $main-color
+      outline: none
+  &:first-child
+    button
+      background-color: $main-color // натройка первого слайда (когда активный+перелистывание)
+  &:last-child
+    button
+      background-color: $main-color 
+  &:nth-child(2n) 
+    button
+      background-color: $main-color 
+  &:nth-child(3n) 
+    button
+      background-color: $main-color 
+
+@media (max-width: 960px)
+  .second
+    &__slide
+      margin-left: 0
+  .review
+    &__slide
+      margin-right: 0
+@media (max-width: 768px)
+  .review
+    &__dots
+      width: 200px
+      right: 210px
+@media (max-width: 768px)
+  .review
+    &__dots
+      width: 200px
+      right: 85px

@@ -25,7 +25,10 @@ body
   .container
     width: 320px
     margin: auto
-
+@media (max-width: 320px)
+  .container, .navbar-container
+    width: 290px
+    margin: auto
 
   
   margin: auto
@@ -57,6 +60,8 @@ body
     z-index: 6
     &__title
       font-size: 28px
+      font-weight: 400
+      line-height: 28px
       +bold
       margin: auto
       text-transform: uppercase
@@ -84,8 +89,3 @@ body
   .main
     &-header
       margin-left: 6%
-
-    
-  
-      
-

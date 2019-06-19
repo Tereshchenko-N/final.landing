@@ -1,0 +1,122 @@
+.news
+  margin-top: 145px
+  background-color: $secondary
+  padding-bottom: 76px
+  &-block
+    display: flex
+    padding-top: 87px
+    &__content
+      display: flex
+      justify-content: space-between
+      
+    &__image
+      display: block
+    &__date
+      display: inline-block
+    &__item
+      padding: 0 20px 0 0
+      
+    &__title
+      font-size: 20px
+      line-height: 28px
+      text-transform: uppercase
+      display: inline-block
+      margin-top: 18px
+      margin-bottom: 0px
+      cursor: pointer
+      position: relative
+      &:hover
+        &:after
+          content: ''
+          display: inline-block
+          height: 1px
+          width: 100%
+          background-color: $text-color
+          padding: 0
+          margin: 0
+          position: absolute
+          top: 85%
+          left: 1%
+    &__text
+      font-size: 18px
+      line-height: 28px
+      margin-bottom: 67px
+      margin-top: -5px
+      max-width: 323px
+      cursor: pointer
+      &:hover
+        text-decoration: underline
+    &__button
+      display: flex
+      justify-content: center
+      align-items: center
+      
+  &__button
+    height: 58px
+    width: 302px
+    font-size: 20px
+    line-height: 28px
+    text-transform: uppercase
+
+.marked
+  background-color: $main-color
+  margin-left: 58px
+  font-size: 16px
+  line-height: 28px
+  +bold      
+.second__date
+  margin-left: 10px
+
+@media (max-width: 1200px)
+  .news
+    &-block
+      &__content
+        align-items: center
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: flex-start
+      &__item
+        padding-left: 70px
+@media (max-width: 1200px)
+  .news
+    &-block
+      &__content
+        align-items: center
+        justify-content: center
+      &__item
+        padding: 5px
+@media (max-width: 576px)
+  .news
+    &-block
+      &__content
+        align-items: center
+        justify-content: center
+      &__title
+        margin-right: 0
+        font-size: 16px
+      &__text
+        font-size: 14px
+      &__item
+        padding: 0px
+        width: 80%
+        margin-bottom: 0px
+      &__image
+        width: 270px
+        height: 160px
+      &__button
+        width: 200px
+        height: 30px
+    &__button
+      font-size: 16px
+      line-height: 20px
+@media (max-width: 576px)  
+  .marked
+    margin-left: 10px
+@media (max-width: 576px)  
+  .button
+    &-block
+      &__wrap
+        display: flex
+        justify-content: center
+        align-items: center
+    

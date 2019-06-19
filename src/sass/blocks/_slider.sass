@@ -19,6 +19,7 @@
         height: 20px
         background-color: #fff
         font-size: 0
+        cursor: pointer
         
 ul
   list-style-type: none
@@ -46,6 +47,12 @@ ul
   .slider
     &__dots
       top: 80%
+@media (max-width: 960px)
+  .slider
+    &__image
+      min-height: 700px
+      width: 150%
+
 @media (max-width: 850px)
   .slider
     &__dots
@@ -55,12 +62,35 @@ ul
         button
           height: 10px
           width: 10px
+    &__image
+      min-height: 500px
+      width: 200%
 
 @media (max-width: 450px)
   .slider
     &__dots
-      top: 65%
+      top: 85%
       width: 100px
+@media (max-width: 576px)
+  .slider
+    width: 100%
+    &__image
+      min-height: 300px
+      width: 300%
+      justify-content: center
+      align-items: center
+      display: flex
+@media (max-width: 420px)
+  .slider
+    width: 100%
+    &__image
+      min-height: 300px
+      width: 300%
+      justify-content: center
+      align-items: center
+      display: flex
+      
+
       
 
   
