@@ -435,13 +435,100 @@
       <!-- /.news -->
     </section>
     <!-- /.section section-news -->
+    <section class="section location-section">
+      <div class="map" id="map">
+        <script></script>
+      </div>
+      <div class="location">
+        <form action="#" class="form location-form" id="location-form">
+          <h3 class="location-form__header">Оставьте <span class="form-color">заявку</span></h3>
+          <!-- /.location-form__header -->
+          <input type="text" name="username" class="input location-form__input" placeholder="Введите Ваше имя">
+          <input type="tel" name="phone" class="input location-form__input phone" placeholder="Введите Ваш номер телефона">
+          <button type="submit" class="button location-form__button" id="form__button">заказать звонок</button>
+          <!-- /.button location-form__button -->
+        </form>
+        <!-- /.form location-form -->
+      </div>
+      <!-- /.location -->
+    </section>
   </main>
+  <footer class="footer">
+    <container class="footer-container container">
+      <div class="footer-block">
+        <div class="footer-block__adress">
+          <img src="img/footer/placeholder.png" alt="Адрес" class="footer-block__placeholder">
+          <p class="footer-block__office">г. Москва, ул. Советская 48 корп. 3</p>
+          <!-- /.footer-block__office -->
+        </div>
+        <!-- /.footer-block__adress -->
+        <div class="footer-block__media">
+          <img src="img/footer/instagram-logo.png" alt="инстаграм" class="footer-block__media-icon">
+          <img src="img/footer/vk.png" alt="вконтакте" class="footer-block__media-icon">
+          <img src="img/footer/ok.png" alt="одноклассники" class="footer-block__media-icon">
+        </div>
+        <div class="footer-block__contacts">
+        <div class="footer-block__contacts-first">
+          <img src="img/footer/mail.png" alt="почта" class="footer-block__contacts-icon">
+          <a href="" class="footer-block__contacts-email">infosanteh@gmail.com</a> 
+          <!-- /.footer-block__contacts-email -->
+        </div>
+        <span class="helper"></span>
+        <!-- /.footer-block__contacts-first -->
+        <div class="footer-block__contacts-second">
+          <img src="img/footer/phone.png" alt="телефон" class="footer-block__contacts-icon">
+          <a href="" class="footer-block__contacts-phone">+7 (863) 342-22-21</a> 
+          <!-- /.footer-block__contacts-phone -->
+        </div>
+        <!-- /.footer-block__contacts-second -->
+      </div>
+<!-- /.footer-block__media -->
+      </div>
+      
+      <!-- /.footer-block__contacts -->
+      <!-- /.footer-block -->
+    </container>
+    <!-- /.footer-container -->
+  </footer>
+  <!-- /.footer --> 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script>
+ //Инициализация wow.js
+    new WOW().init();
+    var close = $('#verification-close');
+    var verification = $('#verification');
+    var brifmodal = $('#bmodal');
+    var brifclose = $('#bclose');
+    $(document).ready(function() {
 
+    $('#location-form').validate({
+      rules: {
+        username: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        phone: "required",
+      },
+      messages: {
+        username: {
+          required: "Введено неправильное количество символов (минимум 2, максимум 15)",
+          minlength: jQuery.validator.format("Минимум {0} символа")
+        },
+        phone: "Заполните поле",
+      },
+    errorClass: "invalid",
+    errorElement: "div",
+  });
+},
+ // Маска для телефона
+ $('.phone').mask('+7 (999) 999-99-99'),
   //Скрипт слайдера 
     $(document).ready(function () {
         $('.slider').slick({
@@ -459,7 +546,7 @@
             }
           },]
   });
-});
+}),
 
     $(document).ready(function () {
         $('.review__slider').slick({
@@ -480,8 +567,9 @@
           dots: true,
           }},]
   });
-});
+}))
   </script>
 
 </body>
+
 </html>

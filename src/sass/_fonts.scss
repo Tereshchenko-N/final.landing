@@ -20,13 +20,13 @@
 }
 
 @font-face {
-  font-family: 'Proxima Nova Rg it';
-  src: url('../fonts/ProximaNova-RegularIt.eot');
-  src: url('../fonts/ProximaNova-RegularIt.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/ProximaNova-RegularIt.woff2') format('woff2'),
-    url('../fonts/ProximaNova-RegularIt.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
+  font-family: 'Proxima Nova ExtraBold';
+  src: url('../fonts/ProximaNova-Extrabld.eot');
+  src: url('../fonts/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Extrabld.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
 }
 
 
@@ -37,6 +37,6 @@
 @mixin bold {
   font-family: 'Proxima Nova Bold', sans-serif;
 }
-@mixin italic {
-  font-family: 'Proxima Nova Rg It', serif;
+@mixin extrabold {
+  font-family: 'Proxima Nova ExtraBold', sans-serif;
 }

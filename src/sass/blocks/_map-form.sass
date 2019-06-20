@@ -1,0 +1,83 @@
+.location
+  display: flex
+  justify-content: center
+  
+  position: relative
+  &-form
+    position: absolute
+    box-shadow: 3px 0px 12px 0px #000000
+    height: 385px
+    width: 397px
+    bottom: 70%
+    left: 19.5%
+    margin-bottom: 140px
+    background-color: #fff
+
+    
+    &__header
+      color: $text-color
+      +extrabold
+      text-transform: uppercase
+      font-size: 20px
+      line-height: 28px
+      margin: 0 auto
+      text-align: center
+      margin-top: 45px
+      margin-bottom: 45px
+    &__input
+      font-style: italic
+      border-top: none
+      border-right: none
+      border-left: none
+      border-bottom: 1px solid black
+      width: 305px
+      outline: none
+      height: 20px
+      margin: auto
+      display: block
+      margin-bottom: 45px
+      padding-bottom: 5px
+      font-size: 18px
+    &__button
+      font-size: 20px
+      line-height: 28px
+      text-transform: uppercase
+      height: 58px
+      width: 305px
+      display: block
+      margin: 65px auto 0 auto
+
+.form
+  &-color
+    +bold
+    text-transform: uppercase
+    color: $main-color
+
+@media (max-width: 768px)
+  .location
+    &-form
+      position: relative
+      margin-bottom: 30px
+      margin-top: 30px
+      left: 0
+@media (max-width: 450px)
+  .location
+    &-form
+      margin-top: 430px
+      margin-bottom: 100px
+      width: 310px
+      height: 300px
+      &__input
+        width: 270px
+      &__button
+        width: 200px
+        height: 40px
+        margin-top: -10px
+        font-size: 16px
+        line-height: 20px
+  .map
+    height: 333px
+@media (max-width: 330px)
+  .location
+    &-form
+      box-shadow: none

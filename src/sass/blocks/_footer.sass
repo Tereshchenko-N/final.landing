@@ -1,0 +1,88 @@
+.footer
+  height: 134px
+  width: 100%
+  background-color: black
+  display: flex
+  flex-direction: column
+  flex: 0 0 auto
+  &-block
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: nowrap
+    &__placeholder
+      max-height: 21px
+      max-width: 15px
+      margin-right: 15px
+    &__adress
+      display: flex
+      align-items: center
+    &__office
+      color: $light-text
+      font-size: 20px
+      line-height: 28px
+    &__media
+      display: flex
+      align-items: center
+      margin-left: 15px
+      &-icon
+        margin-right: 10px
+        cursor: pointer
+    &__contacts
+      display: flex
+      align-items: center
+      &-first
+      &-icon
+        margin-bottom: -1px
+        margin-left: 
+      &-email,
+      &-phone
+        font-size: 18px
+        line-height: 40px
+        text-decoration: none
+        color: $light-text
+        cursor: pointer
+
+.helper 
+  min-width: 1px
+  min-height: 15px
+  background-color: $light-text
+  opacity: 0.33
+  margin-left: 27px
+  margin-right: 23px
+
+@media (max-width: 960px)
+  .footer
+    &-block
+      flex-direction: column
+@media (max-width: 576px)
+  .footer
+    height: 250px
+    &-block
+      flex-direction: row
+      flex-wrap: wrap
+      &__placeholder
+        display: none
+      &__office
+        font-size: 16px
+        line-height: 22px
+      &__adress
+        align-items: center
+        display: block
+        margin: auto
+      &__media
+        display: block
+        margin: auto
+      &__contacts
+        flex-direction: row
+        flex-wrap: wrap
+        &-first
+          display: block
+          margin: auto
+        &-second
+          display: block
+          margin: auto
+        
+    .helper 
+      display: none
