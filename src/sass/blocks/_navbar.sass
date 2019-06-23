@@ -5,6 +5,8 @@
   padding-bottom: 10px
   position: relative
   z-index: 1
+  &-section
+    margin-bottom: -10px
   &-container
     &:after
       content: ''
@@ -295,13 +297,92 @@
             display: none
         
 
-
-
-@media (max-width: 576px) 
+@media (max-width: 768px) 
+  .navbar
+    &-menu
+      order: 2
+      margin-right: -15%
+    &-logo
+      order: 0
+    &-contacts
+      order: 1
+      margin-left: 0%
+    &-container
+      margin-left: 25px
+@media (max-width: 690px) 
+  .navbar
+    &-menu
+      margin-right: -5%
+@media (max-width: 636px) 
+  .navbar
+    &-menu
+      margin-right: 5%
+@media (max-width: 615px) 
   .navbar
     &-contacts
       display: none
-  .menu
-    &__button
-      &-item
-        justify-content: flex-end
+    &-container
+      max-width: 95%
+      &:after
+        display: none
+    &-menu
+      max-height: 20px
+      max-width: 20px
+@media (max-width: 576px) 
+  .navbar
+    width: 470px
+   
+    
+@media (max-width: 495px) 
+  .navbar
+    width: 135%
+    margin-right: 5px
+    margin-left: 5px
+@media (max-width: 466px) 
+  .navbar
+    width: 125%
+    margin-right: 5px
+    margin-left: 5px
+    
+@media (max-width: 421px) 
+  .navbar
+    width: 115%
+    margin-right: 5px
+    margin-left: 5px
+   
+@media (max-width: 391px) 
+  .navbar
+    width: 100%
+    margin-right: 5px
+    margin-left: 5px
+   
+@media (max-width: 366px) 
+  .navbar
+    width: 100%
+    margin-right: 5px
+    margin-left: 5px
+   
+@media (max-width: 352px) 
+  .navbar
+    width: 100%
+    margin-right: 5px
+    margin-left: 5px
+  
+   
+@media (max-width: 347px) 
+  .navbar
+    width: 100%
+    margin-right: 5px
+    margin-left: 5px
+    &-container
+      width: 96%
+      margin: 0
+    &-menu 
+      margin: 0
+@media (max-width: 320px) 
+  diagram-img
+
+    
+
+
+

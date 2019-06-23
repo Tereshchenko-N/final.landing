@@ -5,7 +5,7 @@
     padding-bottom: 150px
   &__dots
     position: absolute
-    top: 113%
+    top: 117%
     right: 47%
     display: flex
     justify-content: space-between
@@ -28,8 +28,9 @@
     justify-content: center
   &__slide
     display: flex
-    padding: 115px 5px 5px 5px
-    margin: 0 120px 0 0px
+    padding: 115px 8px 0px 0px
+    margin: 0 118px 0 0px
+    width: 457px
 
   &__image
     max-width: 120px
@@ -43,14 +44,14 @@
     font-size: 20px
     line-height: 28px
     text-align: center
-    margin-top: 20px
+    margin-top: 11px
     margin-bottom: 15px
   &__description
     color: $light-text
     font-size: 20px
     line-height: 28px
     text-align: center
-    max-width: 465px
+    max-width: 457px
     margin: auto
     margin-bottom: 10px
 
@@ -58,21 +59,28 @@
   color: $light-text 
   margin-right: 30px
   margin-left: 5px
+  margin-bottom: 5px
 .mark
   display: flex
   align-items: center
   justify-content: center
-  margin-right: -25px
+  margin-right: -31px
+  padding-top: 7px
+
  
 .like, .dislike
   max-width: 20px
   max-height: 20px
+ 
 .second
   &__slide
-    margin: 0 0 0 120px
+    margin: 0 0px 0 117px
     
+
 ul
   list-style-type: none
+.review__slide, .second__slide
+  width: 457px
 
 // Настройка dots при активном состоянии 
 .review__slider-active
@@ -101,13 +109,18 @@ ul
   .review
     &__slide
       margin-right: 0
+@media (max-width: 800px)
+  .review
+    &__dots
+      width: 200px
+      right: 310px
 @media (max-width: 768px)
   .review
     &__dots
       width: 200px
-      right: 210px
-@media (max-width: 768px)
+      right: 215px
+@media (max-width: 576px)
   .review
     &__dots
       width: 200px
-      right: 85px
+      right: 83px

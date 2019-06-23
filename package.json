@@ -18,6 +18,21 @@
   },
   "homepage": "https://github.com/Tereshchenko-N/final.landing#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-tinypng": "^1.0.2",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "audit": "0.0.6",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-tiny": "^1.0.0",
+    "gulp-tinypng-compress": "^1.2.5",
+    "htmlmin": "0.0.7",
+    "minify-js": "0.0.4",
+    "minimatch": "^3.0.4",
+    "move-js": "^0.5.0",
+    "promise.prototype.finally": "^3.1.0"
   }
 }

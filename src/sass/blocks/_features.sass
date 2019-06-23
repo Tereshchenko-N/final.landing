@@ -109,13 +109,38 @@
       left: 13px
 
 
-.diagram, .experience, 
+.diagram 
   margin-top: -20px
+  &-text
+    margin-top: -14px
+  &-img
+    margin-top: -30px
+    margin-bottom: 30px
+.experience  
+  margin-top: -18px
+  &-img
+    margin-top: -25px
+    margin-bottom: 25px
+  &-text
+    margin-top: -16px
 .calendar
-  margin-top: -5px
+  &-text
+    margin-top: -1px
   &-img
     margin-top: -35px
     margin-bottom: 20px
+.shield
+  margin-bottom: 30px
+.operator, .care, 
+  &-text
+    margin-top: -6px
+.operator
+  &-img
+    margin-bottom: 20px
+.care
+  &-img
+    margin-bottom: 20px
+
 @media (max-width:1400px)
   .features
     &:after
@@ -138,7 +163,7 @@
     margin-top: -20px
     margin-bottom: 34px
   .calendar
-    margin-top: 20px
+   
     &-img
       margin-top: -30px
 @media (max-width: 960px)
@@ -150,6 +175,7 @@
       &__block
         justify-content: center
         align-items: center
+        margin-bottom: -120px
     &:after
       width: 100%
       min-height: 550px
@@ -163,13 +189,13 @@
       flex-basis: 100%
     &:after
       width: 100%
-      min-height: 650px
+      min-height: 770px
 @media (max-width: 576px)
   .features
     &-block
       background-color: $secondary
       &__item
-        margin: 0 
+        margin: 0 4% 30px 4%
         margin-bottom: 30px
     &:after
       width: 100%
@@ -177,6 +203,7 @@
     &-list
       &__block
         padding-left: 0px
+        margin-bottom: -170px
 @media (max-width: 576px)    
   .features
     &-list
@@ -188,6 +215,25 @@
     &__fourth
       &:before
         bottom: 22px
-        
-     
+@media (max-width: 2000px)   
+  .operator, .care, .calendar
+    margin-top: -30px   
+  .shield, .diagram, .expierence
+       
+@media (max-width: 1200px)   
+  .operator, .care, .calendar
+    margin-top: 0px   
+  .operator
+    margin-top: -3px
+  .shield, .diagram, .expierence
+@media (max-width: 1200px)   
+  .shield
+    margin-top: -3px
+  .operator
+    margin-top: 3px
+@media (max-width: 768px)   
+  .operator
+    margin-top: -4px
+       
+       
      

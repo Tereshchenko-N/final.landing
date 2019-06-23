@@ -9,8 +9,30 @@
   <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+        a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(54163882, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/54163882" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
   <main>
-    <section class="section navbar-section">
+    <div class="section navbar-section">
         <div class="container navbar-container">
           <div class="navbar">
             <div class="navbar-logo"><img src="img/navbar/logo.png" alt="Логотип" class="logo"></div>
@@ -38,44 +60,69 @@
               <img src="img/navbar/phone.png" alt="Значек телефона" class="navbar-contacts__phone-image">
               <a href="#" class="navbar-contacts__phone-number">+7 (863)<span class="text-bold">342-22-21</span></a>
             </div>
-            <button class="button navbar-contacts__button">Заказать звонок</button>
+            <button class="button navbar-contacts__button" id="button">Заказать звонок</button>
             <!-- /.button navbar-contacts__button -->
            </div>
           </div>
-          <!-- /.navbar -->
-          
+           </div>
         </div>
       <!-- /.container -->
-    </section>
     <!-- /.section navbar-section -->
     <div class="hero">
       <div class="slider">
         <div class="slider__contents">
-          <img class="slider__image" src="img/slider/2.png" alt="Монтирование отопления и сантехники">
-        </div>
-        <div class="slider__contents">
-          <img class="slider__image" src="img/slider/2.jpg" alt="Монтирование отопления и сантехники">
-        </div>
-        <div class="slider__contents">
-          <img class="slider__image" src="img/slider/2.png" alt="Монтирование отопления и сантехники">
-        </div>
-        <div class="slider__contents">
-          <img class="slider__image" src="img/slider/2.jpg" alt="Монтирование отопления и сантехники">
-        </div>
-      </div>
           <div class="hero-text">
             <h1 class="hero__title">Наша бригада по монтированию отопления и сантехники</h1>
             <h2 class="hero__subtitle">вызов по Москве и Московской области</h2>
             <p class="hero__description">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки.Всё что
               Вам нужно это оставить <br> заявку либо позвонить самому на указанный номер.Всего хорошего.</p>
-            <button class="button hero__button">подробнее</button>
+            <div class="hero__button-wrap"> <button class="button hero__button">подробнее</button></div>
+              <img class="slider__image" src="img/slider/2.png" alt="Монтирование отопления и сантехники">
           </div>
+        
+        </div>
+        <div class="slider__contents slider__contents-2">
+          <div class="hero-text">
+            <h1 class="hero__title">Наша бригада по монтированию отопления и сантехники</h1>
+            <h2 class="hero__subtitle">вызов по Москве и Московской области</h2>
+            <p class="hero__description">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки.Всё что
+              Вам нужно это оставить <br> заявку либо позвонить самому на указанный номер.Всего хорошего.</p>
+              <div class="hero__button-wrap"> <button class="button hero__button">подробнее</button></div>
+             <img class="slider__image" src="img/slider/2.jpg" alt="Монтирование отопления и сантехники">
+          </div>
+         
+        </div>
+        <div class="slider__contents">
+          <div class="hero-text">
+            <h1 class="hero__title">Наша бригада по монтированию отопления и сантехники</h1>
+            <h2 class="hero__subtitle">вызов по Москве и Московской области</h2>
+            <p class="hero__description">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки.Всё что
+              Вам нужно это оставить <br> заявку либо позвонить самому на указанный номер.Всего хорошего.</p>
+               <div class="hero__button-wrap"> <button class="button hero__button">подробнее</button></div>
+              <img class="slider__image" src="img/slider/2.png" alt="Монтирование отопления и сантехники">
+            
+          </div>
+          
+        </div>
+        <div class="slider__contents slider__contents-2">
+          <div class="hero-text">  
+           
+            <h1 class="hero__title">Наша бригада по монтированию отопления и сантехники</h1>
+            <h2 class="hero__subtitle">вызов по Москве и Московской области</h2>
+            <p class="hero__description">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки.Всё что
+              Вам нужно это оставить <br> заявку либо позвонить самому на указанный номер.Всего хорошего.</p>
+             <div class="hero__button-wrap"> <button class="button hero__button">подробнее</button></div>
+            <img class="slider__image" src="img/slider/2.jpg" alt="Монтирование отопления и сантехники">
+          </div>
+         
+        </div>
+      </div>
     </div>
     <!-- /.hero -->
     <div class="section section__services">
       <div class="container services-container">
         <div class="services">
-          <div class="services-main main-header">
+          <div class="services-main main-header main-header__services">
             <h3 class="main-header__title">Услуги</h3>
             <!-- /.main-header__title -->
           </div>
@@ -89,8 +136,8 @@
               <p class="services-block__text">Монтаж систем <br> отопления</p>
               <p class="services-block__text-hover">Здесь будет короткое описание о данной услуге</p>
               <!-- /.services-block__text -->
-              <button class="services-block__button button">узнать цену</button>
-              <button class="services-block__button-hover button">от 500 р.</button>
+              <button class="services-block__button button first-3">узнать цену</button>
+              <button class="services-block__button-hover button first-3">от 500 р.</button>
               <!-- /.services-block__button -->
             </div>
             <!-- /.services-block__content -->
@@ -102,8 +149,8 @@
               <p class="services-block__text">Монтаж сантехнического оборудования</p>
               <p class="services-block__text-hover">Здесь будет короткое описание о данной услуге</p>
               <!-- /.services-block__text -->
-              <button class="services-block__button button">узнать цену</button>
-              <button class="services-block__button-hover button">от 500 р.</button>
+              <button class="services-block__button button first-3">узнать цену</button>
+              <button class="services-block__button-hover button first-3">от 500 р.</button>
               <!-- /.services-block__button -->
             </div>
             <!-- /.services-block__content -->
@@ -115,8 +162,8 @@
               <p class="services-block__text">Монтаж канализационного оборудования</p>
               <p class="services-block__text-hover">Здесь будет короткое описание о данной услуге</p>
               <!-- /.services-block__text -->
-              <button class="services-block__button button">узнать цену</button>
-              <button class="services-block__button-hover button">от 500 р.</button>
+              <button class="services-block__button button first-3">узнать цену</button>
+              <button class="services-block__button-hover button first-3">от 500 р.</button>
               <!-- /.services-block__button -->
             </div>
             <!-- /.services-block__content -->
@@ -177,39 +224,39 @@
           </div>
           <!-- /.features-main main-header -->
           <div class="features-block">
-            <div class="features-block__item">
+            <div class="features-block__item shield">
               <img src="img/features/warranty.png" alt="Гарантия" class="features-block__image waranty100">
               <p class="features-block__text">100 % гарантия качества</p>
               <!-- /.feature-block__text -->
             </div>
             <!-- /.features-block__item -->
             <div class="features-block__item diagram">
-              <img src="img/features/diagram.png" alt="Диаграмма" class="features-block__image">
-              <p class="features-block__text">с нами выгодно</p>
+              <img src="img/features/diagram.png" alt="Диаграмма" class="features-block__image diagram-img">
+              <p class="features-block__text diagram-text">с нами выгодно</p>
               <!-- /.feature-block__text -->
             </div>
             <!-- /.features-block__item -->
             <div class="features-block__item experience">
-              <img src="img/features/trophy.png" alt="Трофей" class="features-block__image">
-              <p class="features-block__text">большой опыт</p>
+              <img src="img/features/trophy.png" alt="Трофей" class="features-block__image experience-img">
+              <p class="features-block__text experience-text">большой опыт</p>
               <!-- /.feature-block__text -->
             </div>
             <!-- /.features-block__item -->
-            <div class="features-block__item">
-              <img src="img/features/operator.png" alt="Оператор" class="features-block__image">
-              <p class="features-block__text">быстрая онлайн поддержка</p>
+            <div class="features-block__item operator">
+              <img src="img/features/operator.png" alt="Оператор" class="features-block__image operator-img">
+              <p class="features-block__text operator-text">быстрая онлайн поддержка</p>
               <!-- /.feature-block__text -->
             </div>
             <!-- /.features-block__item -->
-            <div class="features-block__item">
-              <img src="img/features/care.png" alt="забота" class="features-block__image">
-              <p class="features-block__text">с заботой <br> о клиенте</p>
+            <div class="features-block__item care">
+              <img src="img/features/care.png" alt="забота" class="features-block__image care-img">
+              <p class="features-block__text care-text">с заботой <br> о клиенте</p>
               <!-- /.feature-block__text -->
             </div>
             <!-- /.features-block__item -->
-            <div class="features-block__item">
+            <div class="features-block__item calendar">
               <img src="img/features/calendar.png" alt="календарь" class="features-block__image calendar-img">
-              <p class="features-block__text calendar">точно в срок</p>
+              <p class="features-block__text calendar-text">точно в срок</p>
               <!-- /.feature-block__text -->
             </div>
             <!-- /.features-block__item -->
@@ -293,8 +340,8 @@
           </div>
           <!-- /.rewiev__slide -->
           <div class="review__slide">
-            <img src="img/review/girl.png" alt="Девушка" class="review__image">
-            <h4 class="review__title">Анна Говорухина</h4>
+            <img src="img/review/girl-2.png" alt="Девушка" class="review__image">
+            <h4 class="review__title">Елизавета Попова</h4>
             <!-- /.review__title -->
             <p class="review__description">Authoritatively incubate multidisciplinary partnerships and user friendly
               e-markets. Interactively whiteboard client-based leadership  </p>
@@ -310,8 +357,8 @@
           </div>
           <!-- /.rewiev__slide -->
           <div class="review__slide second__slide">
-            <img src="img/review/boy.png" alt="Парень" class="review__image">
-            <h4 class="review__title">Виктор Шукшин</h4>
+            <img src="img/review/boy-2.png" alt="Парень" class="review__image">
+            <h4 class="review__title">Евгений Кузнецов</h4>
             <!-- /.review__title -->
             <p class="review__description">Synergistically mesh magnetic leadership rather than cooperative best
               practices. Authoritatively initiate.Monotonectally actualize 24/7 metricsafter</p>
@@ -327,8 +374,8 @@
           </div>
           <!-- /.rewiev__slide -->
           <div class="review__slide">
-            <img src="img/review/girl.png" alt="Девушка" class="review__image">
-            <h4 class="review__title">Анна Говорухина</h4>
+            <img src="img/review/girl-3.png" alt="Девушка" class="review__image">
+            <h4 class="review__title">Виктория Петрова</h4>
             <!-- /.review__title -->
             <p class="review__description">Authoritatively incubate multidisciplinary partnerships and user friendly
               e-markets. Interactively whiteboard client-based leadership  v</p>
@@ -344,8 +391,8 @@
           </div>
           <!-- /.rewiev__slide -->
           <div class="review__slide second__slide">
-            <img src="img/review/boy.png" alt="Парень" class="review__image">
-            <h4 class="review__title">Виктор Шукшин</h4>
+            <img src="img/review/boy-3.png" alt="Парень" class="review__image">
+            <h4 class="review__title">Андрей Смирнов</h4>
             <!-- /.review__title -->
             <p class="review__description">Synergistically mesh magnetic leadership rather than cooperative best
               practices. Authoritatively initiate.Monotonectally actualize 24/7 metricsafter</p>
@@ -365,7 +412,6 @@
         </div>
 
         <!-- /.review-main main-header -->
-      </div>
       <!-- /.container -->
     </section>
     <!-- /.section review-section -->
@@ -440,21 +486,21 @@
         <script></script>
       </div>
       <div class="location">
-        <form action="#" class="form location-form" id="location-form">
+        <form class="form location-form" id="location-form">
           <h3 class="location-form__header">Оставьте <span class="form-color">заявку</span></h3>
           <!-- /.location-form__header -->
           <input type="text" name="username" class="input location-form__input" placeholder="Введите Ваше имя">
           <input type="tel" name="phone" class="input location-form__input phone" placeholder="Введите Ваш номер телефона">
-          <button type="submit" class="button location-form__button" id="form__button">заказать звонок</button>
+          <button type="submit" class="button location-form__button" id="bbutton">заказать звонок</button>
           <!-- /.button location-form__button -->
         </form>
         <!-- /.form location-form -->
       </div>
       <!-- /.location -->
     </section>
-  </main>
+  
   <footer class="footer">
-    <container class="footer-container container">
+    <div class="footer-container container">
       <div class="footer-block">
         <div class="footer-block__adress">
           <img src="img/footer/placeholder.png" alt="Адрес" class="footer-block__placeholder">
@@ -463,14 +509,17 @@
         </div>
         <!-- /.footer-block__adress -->
         <div class="footer-block__media">
-          <img src="img/footer/instagram-logo.png" alt="инстаграм" class="footer-block__media-icon">
-          <img src="img/footer/vk.png" alt="вконтакте" class="footer-block__media-icon">
-          <img src="img/footer/ok.png" alt="одноклассники" class="footer-block__media-icon">
-        </div>
+          <a href="https://www.instagram.com"  class="footer-block__media-icon footer-block__media-icon-insta"></a>
+         
+          <a href="https://vk.com"  class="footer-block__media-icon footer-block__media-icon-vk"></a>
+       
+          <a href="https://ok.ru"  class="footer-block__media-icon footer-block__media-icon-ok"></a>
+         
+       </div>
         <div class="footer-block__contacts">
         <div class="footer-block__contacts-first">
           <img src="img/footer/mail.png" alt="почта" class="footer-block__contacts-icon">
-          <a href="" class="footer-block__contacts-email">infosanteh@gmail.com</a> 
+          <a href="" class="footer-block__contacts-email">infosanteh@gmail.com</a>
           <!-- /.footer-block__contacts-email -->
         </div>
         <span class="helper"></span>
@@ -487,24 +536,43 @@
       
       <!-- /.footer-block__contacts -->
       <!-- /.footer-block -->
-    </container>
+    </div>
     <!-- /.footer-container -->
   </footer>
-  <!-- /.footer --> 
+</main>
+  <!-- /.footer -->
+   <div class="modal" id="modal">
+     <div class="modal-dialog">
+       <h4 class="modal-dialog__title">
+         Мы вам перезвоним в ближайшее время
+       </h4>
+       <button class="modal-dialog__close" id="close">&times; </button>
+     </div>
+     <!-- /.modal-dialog -->
+   </div>
+   <div class="bmodal" id="bmodal">
+     <div class="bmodal-dialog">
+       <h4 class="bmodal-dialog__title">
+         Спасибо, мы вам перезвоним!
+       </h4>
+       <button class="bmodal-dialog__bclose" id="bclose">&times; </button>
+     </div>
+     <!-- /.modal-dialog -->
+   </div>
+
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/map.js"></script>
+  <script src="js/modal.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script>
  //Инициализация wow.js
-    new WOW().init();
-    var close = $('#verification-close');
-    var verification = $('#verification');
-    var brifmodal = $('#bmodal');
-    var brifclose = $('#bclose');
+    new WOW().init();map
+    var mapmodal = $('#bmodal');
+    var mapclose = $('#bclose');
     $(document).ready(function() {
 
     $('#location-form').validate({
@@ -523,8 +591,15 @@
         },
         phone: "Заполните поле",
       },
-    errorClass: "invalid",
-    errorElement: "div",
+      errorClass: "invalid",
+      errorElement: "div",
+      submitHandler: function (form) {
+       mapmodal.addClass('bmodal__active');
+
+      mapclose.on('click', function () {
+        mapmodal.removeClass('bmodal__active');
+     });
+     }
   });
 },
  // Маска для телефона
@@ -540,7 +615,7 @@
           dotsClass: 'slick-dots slider__dots',
           autoplay: true,
           responsive: [{
-            breakpoint: 576,
+            breakpoint: 768,
             settings: {
             
             }
@@ -560,7 +635,7 @@
           autoplay: false,
           responsive: [
           {
-          breakpoint: 768,
+          breakpoint: 800,
           settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

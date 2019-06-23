@@ -4,6 +4,7 @@
 body
   color: $text-color
   +reg
+  margin: 0
 
 .container
   margin-bottom: 130px
@@ -69,27 +70,28 @@ body
   .main
     &-header
       margin-left: 5%
-  
-@media (max-width: 576px)
-  .main
-    &-header
-      margin-left: 35px
-      height: 48px
-      width: 220px
-@media (max-width: 450px)
-  .main
-    &-header
-      height: 38px
-      width: 200px
-      margin-top: -22px
-      margin-left: 55px
-      &__title
-        font-size: 22px
+
 @media (max-width: 1270px)
   .main
     &-header
       margin-left: 6%
+@media (max-width: 768px)
+  .main
+    &-header
+      left: 43%
+      transform: translate(-50%, -50%);  // выравнивание эллемента при абсолютном позиционировании + оступы задавать в процентах для адаптивности
+      margin-top: 0         
+      &__services
+       transform: translate(-35%, -65%);
+       bottom: -70px
+       left: 38%
+@media (max-width: 576px)
+  .main
+    &-header
+      &__services
+        left: 33%
 
+       
 
 
 
@@ -108,7 +110,25 @@ input.invalid, input.invalid-2
     font-size: 14px
     line-height: 15px
     display: block
-    max-width: 50%
-    margin-top: -30px
     color: red
-    top: 95%
+    max-width: 70%
+    transform: translate(5%, -50%)
+    z-index: 1
+#username
+  &-error
+    top: 25%
+    left: 15%
+#phone
+  &-error
+    top: 58%
+    left: 35%
+@media (max-width: 450px)
+  #phone, #username
+    &-error   
+      font-size: 12px
+      line-height: 16px
+  #username
+    &-error
+      top: 30%
+
+  
