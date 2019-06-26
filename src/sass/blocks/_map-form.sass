@@ -55,17 +55,19 @@
 @media (max-width: 768px)
   .location
     &-form
-      position: relative
+      position: absolute
       margin-bottom: 30px
       margin-top: 30px
-      left: 0
-@media (max-width: 450px)
+      transform: translate(-20%, -135%) !important 
+@media (max-width: 576px)
   .location
+    height: 330px
     &-form
+      position: relative
       margin-top: 430px
-      margin-bottom: 100px
       width: 310px
       height: 300px
+      margin-left: -2%
       &__input
         width: 270px
       &__button
@@ -74,9 +76,35 @@
         margin-top: -10px
         font-size: 16px
         line-height: 20px
+@media (max-width: 576px)
   .map
     height: 333px
 @media (max-width: 330px)
   .location
     &-form
       box-shadow: none
+@media (max-width: 1200px)
+  .location
+    &-form
+      transform: translate(-50%, -135%)
+@media (max-width: 850px)
+  .location
+    &-form
+      transform: translate(-40%, -135%)
+@media (max-width: 576px)
+  .location
+    &-form
+      
+      transform: translate(3%, -135%) !important
+@media (max-width: 400px)
+  .location
+    height: 720px
+    &-form
+      position: static
+      display: block
+      margin-top: 770px
+      width: 300px
+      box-shadow: none
+      margin-bottom: 0
+  
+   

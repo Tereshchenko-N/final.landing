@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
+  <script>
     (function (m, e, t, r, i, k, a) {
       m[i] = m[i] || function () {
         (m[i].a = m[i].a || []).push(arguments)
@@ -24,13 +24,15 @@
     ym(54163882, "init", {
       clickmap: true,
       trackLinks: true,
-      accurateTrackBounce: true
+      accurateTrackBounce: true,
+      webvisor: true
     });
   </script>
   <noscript>
     <div><img src="https://mc.yandex.ru/watch/54163882" style="position:absolute; left:-9999px;" alt="" /></div>
   </noscript>
   <!-- /Yandex.Metrika counter -->
+ 
   <main>
     <div class="section navbar-section">
         <div class="container navbar-container">
@@ -60,7 +62,8 @@
               <img src="img/navbar/phone.png" alt="Значек телефона" class="navbar-contacts__phone-image">
               <a href="#" class="navbar-contacts__phone-number">+7 (863)<span class="text-bold">342-22-21</span></a>
             </div>
-            <button class="button navbar-contacts__button" id="button">Заказать звонок</button>
+            <button class="button navbar-contacts__button" onclick="ym(52439986, 'reachGoal', 'button'); return true;"
+              id="button">Заказать звонок</button>
             <!-- /.button navbar-contacts__button -->
            </div>
           </div>
@@ -311,8 +314,7 @@
             <img src="img/review/girl.png" alt="Девушка" class="review__image">
             <h4 class="review__title">Анна Говорухина</h4>
             <!-- /.review__title -->
-            <p class="review__description">Authoritatively incubate multidisciplinary partnerships and user friendly
-              e-markets. Interactively whiteboard client-based leadership  </p>
+            <p class="review__description">я все поправила </p>
             <!-- /.review__description -->
             <div class="mark">
               <!-- /.img like -->
@@ -328,8 +330,7 @@
             <img src="img/review/boy.png" alt="Парень" class="review__image">
             <h4 class="review__title">Виктор Шукшин</h4>
             <!-- /.review__title -->
-            <p class="review__description"> Synergistically mesh magnetic leadership rather than cooperative best
-              practices. Authoritatively initiate.Monotonectally actualize 24/7 metricsafter</p>
+            <p class="review__description"> я все поправила</p>
             <!-- /.review__description -->
             <div class="mark">
               <!-- /.img like -->
@@ -343,8 +344,7 @@
             <img src="img/review/girl-2.png" alt="Девушка" class="review__image">
             <h4 class="review__title">Елизавета Попова</h4>
             <!-- /.review__title -->
-            <p class="review__description">Authoritatively incubate multidisciplinary partnerships and user friendly
-              e-markets. Interactively whiteboard client-based leadership  </p>
+            <p class="review__description">я все поправила </p>
             <!-- /.review__description -->
             <div class="mark">
               <!-- /.img like -->
@@ -360,8 +360,7 @@
             <img src="img/review/boy-2.png" alt="Парень" class="review__image">
             <h4 class="review__title">Евгений Кузнецов</h4>
             <!-- /.review__title -->
-            <p class="review__description">Synergistically mesh magnetic leadership rather than cooperative best
-              practices. Authoritatively initiate.Monotonectally actualize 24/7 metricsafter</p>
+            <p class="review__description">я все поправила</p>
             <!-- /.review__description -->
             <div class="mark">
               <!-- /.img like -->
@@ -377,8 +376,7 @@
             <img src="img/review/girl-3.png" alt="Девушка" class="review__image">
             <h4 class="review__title">Виктория Петрова</h4>
             <!-- /.review__title -->
-            <p class="review__description">Authoritatively incubate multidisciplinary partnerships and user friendly
-              e-markets. Interactively whiteboard client-based leadership  v</p>
+            <p class="review__description">я все поправила</p>
             <!-- /.review__description -->
             <div class="mark">
               <!-- /.img like -->
@@ -394,8 +392,7 @@
             <img src="img/review/boy-3.png" alt="Парень" class="review__image">
             <h4 class="review__title">Андрей Смирнов</h4>
             <!-- /.review__title -->
-            <p class="review__description">Synergistically mesh magnetic leadership rather than cooperative best
-              practices. Authoritatively initiate.Monotonectally actualize 24/7 metricsafter</p>
+            <p class="review__description">я все поправила</p>
             <!-- /.review__description -->
             <div class="mark">
               <!-- /.img like -->
@@ -482,19 +479,24 @@
     </section>
     <!-- /.section section-news -->
     <section class="section location-section">
+      
+        
       <div class="map" id="map">
         <script></script>
+      
       </div>
       <div class="location">
-        <form class="form location-form" id="location-form">
+        <form action="mail.php" method="POST" class="form location-form" id="location-form">
           <h3 class="location-form__header">Оставьте <span class="form-color">заявку</span></h3>
           <!-- /.location-form__header -->
           <input type="text" name="username" class="input location-form__input" placeholder="Введите Ваше имя">
           <input type="tel" name="phone" class="input location-form__input phone" placeholder="Введите Ваш номер телефона">
-          <button type="submit" class="button location-form__button" id="bbutton">заказать звонок</button>
+          <button type="submit" class="button location-form__button"
+            onclick="ym(52439971, 'reachGoal', 'bbutton'); return true;" id="bbutton">заказать звонок</button>
           <!-- /.button location-form__button -->
         </form>
         <!-- /.form location-form -->
+        <!-- <?php include "mail.php"?> -->
       </div>
       <!-- /.location -->
     </section>
@@ -569,6 +571,27 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script>
+    $(function () {
+      $("#bmodal").dialog({
+        height: 140,
+        modal: true,
+        autoOpen: false
+      });
+      $('#location-form').submit(function () {
+        $("#bmodal").addClass("bmodal__active");
+        $.ajax({
+          type: "POST",
+          url: $(this).attr('action'),
+          data: $(this).serialize(),
+          success: function () {
+            $("#bmodal").removeClass("bmodal__active");
+          }
+        });
+        return false;
+      });
+    });
+  </script>
+  <script>
  //Инициализация wow.js
     new WOW().init();map
     var mapmodal = $('#bmodal');
@@ -602,6 +625,7 @@
      }
   });
 },
+
  // Маска для телефона
  $('.phone').mask('+7 (999) 999-99-99'),
   //Скрипт слайдера 
@@ -614,6 +638,7 @@
           dots: true,
           dotsClass: 'slick-dots slider__dots',
           autoplay: true,
+          autoplaySpeed: 3000,
           responsive: [{
             breakpoint: 768,
             settings: {
@@ -643,6 +668,9 @@
           }},]
   });
 }))
+
+
+
   </script>
 
 </body>
